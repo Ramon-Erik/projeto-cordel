@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Quartzo;
+    src: url('fontes/QuartzoBold-W9lv.ttf');
+    font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --preto: rgb(20, 0, 0); 
+    --titulo:  Quartzo, sans-serif;
+    --versos: 'Bebas Neue', cursive;
+    --texto: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 4vw;
+}
+
+header {
+    height: fit-content;
+    margin-bottom: 15px;
+    padding: 35px;
+    color: white;
+    text-align: center;
+    font-family: var(--titulo);
+    background-color: var(--preto);
+    font-family: var(--texto);
+}
+
+header h1 {
+    font-size: 5.5vw;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+main {
+    margin: 10px 0px;
+    line-height: 8vw;
+}
+
+article p {
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#destaque1 {
+    background-color: rgb(249, 255, 198);
+    background-image: url(imagens/background001.jpg);
+}
+
+#destaque2 {
+    background-color: rgb(249, 255, 198);
+    background-image: url(imagens/background002.jpg);
+}
+
+.destaque {
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.destaque > pre {
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+pre {
+    font-family: var(--versos);
+    font-style: italic;
+    margin: 15px 25px;
+}
+
+footer {
+    font-family: var(--texto);
+    background-color: var(--preto);
+    font-size: 2.7vw;
+    padding-top: 10px;
+}
+
+footer, header > p {
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+}
